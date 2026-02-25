@@ -20,8 +20,8 @@ if st.button("Check Anomaly"):
         result = response.json()
         
         if result["anomaly"]:
-            st.error("🚨 Anomaly Detected")
+            st.error("Anomaly Detected")
         else:
-            st.success("✅ Normal")
+            st.success("Normal")
     except Exception as e:
         st.error(f"Error: {e}")
